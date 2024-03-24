@@ -12,12 +12,12 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 # Environment
 
 - Create your conda environment: 
-
+  ```
   $ conda create --name <your environment name> --file requirements.txt
   $ conda env create --file conda.yaml
-
-- $ conda activate <your environment name>
-
+  
+  $ conda activate <your environment name>
+  ```
 
 # Usage
 
@@ -27,15 +27,15 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   The notebook also provides a good overview of the data.
 
 - Sanity check: 
-
+  ```
   $ python -m check.sanitycheck
-
+  ```
   Answer path question with "api_tests.py" as test file for a check of functionality to meet course specifications
 
 - Train the model: 
-
+  ```
   $ python -m ml.train_model
-
+  ```
   After the model has been trained successfully, the following files will be saved:
 
   Metrics will be written to ["/artifacts/slice_output.txt"](./artifacts/slice_output.txt)
@@ -48,17 +48,17 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 - Census API tests: 
 
   Start the uvicorn server with:
-  
+  ```
   $ uvicorn main:app --reload
-  
+  ```
   The server is then accessible via: ["http://127.0.0.1:8000"](http://127.0.0.1:8000)
 
   Documents can be found here: ["http://127.0.0.1:8000/docs"](http://127.0.0.1:8000/docss)
 
   FastAPI tests can be performed by executing the command: 
-
+  ```
   $ python -m api_tests
-
+  ```
   and by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
 
 # Model
@@ -68,5 +68,3 @@ Find model card for more detailed information: model_card.md
 # GithubActions
 
 If changes have been made, github actions is called.
-
-    - with one exception: if a tag is pushed, github actions are also called
