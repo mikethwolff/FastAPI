@@ -1,1 +1,38 @@
-
+2024-03-24 20:30:18.069 INFO [ START: Training... ]
+2024-03-24 20:30:26.000 INFO [ FINISH: Training successful ]
+2024-03-24 20:30:26.026 INFO [ METRICS: Precision: 0.7516891891891891, Recall: 0.5676020408163265, Fbeta: 0.6468023255813954 ]
+2024-03-24 20:30:27.949 INFO [ FILE: Metrics written to ./artifacts/slice_output.txt ]
+2024-03-24 20:30:27.952 INFO [ FILE: Model saved to file ./artifacts/model.joblib ]
+2024-03-24 20:30:27.954 INFO [ FILE: Encoder saved to ./artifacts/encoder.joblib ]
+2024-03-24 20:30:27.955 INFO [ FILE: Label binarizer saved to ./artifacts/lb.joblib ]
+2024-03-24 20:30:47.389 INFO [ FastAPI ]
+2024-03-24 20:30:47.390 INFO [ START: Loading model... ]
+2024-03-24 20:30:47.398 INFO [ SUCCESS: Model loaded ]
+2024-03-24 20:31:08.736 INFO [ CONTROL: Data dictonary: dict_values(['Private', 'Masters', 'Never-married', 'Prof-specialty', 'Not-in-family', 'White', 'Female', 'United-States', 31, 45781, 14, 14084, 0, 50]) ]
+2024-03-24 20:31:08.740 INFO [ START: Model inference started ]
+2024-03-24 20:31:08.772 INFO [ CONTROL: Input data:   workclass education marital_status      occupation   relationship   race     sex native_country  age  fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private   Masters  Never-married  Prof-specialty  Not-in-family  White  Female  United-States   31  45781             14         14084             0              50 ]
+2024-03-24 20:31:08.776 INFO [ START: Cleaning data ]
+2024-03-24 20:31:08.790 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-24 20:31:08.791 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-24 20:31:08.792 INFO [ Cleaned data returned ]
+2024-03-24 20:31:08.803 INFO [ MODEL: Run inference with input: [[3.1000e+01 4.5781e+04 1.4000e+01 1.4084e+04 0.0000e+00 5.0000e+01
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
+2024-03-24 20:31:08.841 INFO [ FINISH: Prediction completed ]
+2024-03-24 20:31:08.841 INFO [ RESULT: The predicted income is: >50K ]
