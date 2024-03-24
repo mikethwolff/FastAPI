@@ -8,7 +8,7 @@ Michael Wolff created this model. The model is using [LogisticRegression](https:
 
 ## Intended Use
 
-This model can be used to predict whether an income exceeds, or is below $50K/yr based on the rovided census data.
+This model can be used to predict whether an income exceeds, or is below $50K/yr based on the provided census data.
 
 ## Training Data
 
@@ -18,7 +18,7 @@ The trainings data was provided in the [Udacity nd0821-c3 project starter kit](h
 
 You can gain information on the data from this Jupyter notebook: ["Census_Clean_Data.ipynb"](Census_Clean_Data.ipynb).
 
-In the process of data cleaning, spaces from column names were removed and also hyphen were replace with underscore.
+In the process of data cleaning, spaces from column names were removed and also hyphen were replaced with underscore.
 The dataset contains 32561 rows and 15 features (9 categorical and 6 numerical features).
 
 The dataset set is split into 80-20 for a train and test split. The target feature is "salary", in 2 categories, salaries over $50K/yr, and salaries below $50K/yr. 
