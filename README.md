@@ -24,7 +24,8 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 - Data cleaning:
 
   Data cleaning can be performed by using the Jupyter notebook ["Census_Clean_Data.ipynb"](Census_Clean_Data.ipynb).
-  The notebook also provides a good overview of the data.
+  The notebook also provides a good overview of the data. 
+  Data cleaning will also be provided via Python file: ["/ml/data_cleaning.py"](/ml/data_cleaning.py)
 
 - Sanity check: 
   ```
@@ -38,12 +39,15 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   ```
   After the model has been trained successfully, the following files will be saved:
 
-  Metrics will be written to ["/artifacts/slice_output.txt"](./artifacts/slice_output.txt)
+  Metrics will be written to ["/artifacts/slice_output.txt"](/artifacts/slice_output.txt)
+
   Model will be saved to file ["/artifacts/model.joblib"](/artifacts/model.joblib)
+
   Encoder will be saved to ["/artifacts/encoder.joblib"](/artifacts/encoder.joblib)
+
   Label binarizer will be saved to ["/artifacts/lb.joblib"](/artifacts/lb.joblib)
 
-  The output will be shown on screen and also be saved in ["/logs/census.log"](./logs/census.log)
+  The output will be shown on screen and also be saved in ["/logs/census.log"](/logs/census.log)
 
 - Census API tests: 
 

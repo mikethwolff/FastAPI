@@ -36,3 +36,34 @@
   0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
 2024-03-24 20:31:08.841 INFO [ FINISH: Prediction completed ]
 2024-03-24 20:31:08.841 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 19:32:28.657 INFO [ FastAPI ]
+2024-03-26 19:32:28.658 INFO [ START: Loading model... ]
+2024-03-26 19:32:28.663 INFO [ SUCCESS: Model loaded ]
+2024-03-26 19:33:59.086 INFO [ CONTROL: Data dictonary: dict_values(['Private', 'Masters', 'Never-married', 'Prof-specialty', 'Not-in-family', 'White', 'Female', 'United-States', 31, 45781, 14, 14084, 0, 50]) ]
+2024-03-26 19:33:59.087 INFO [ START: Model inference started ]
+2024-03-26 19:33:59.116 INFO [ CONTROL: Input data:   workclass education marital_status      occupation   relationship   race     sex native_country  age  fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private   Masters  Never-married  Prof-specialty  Not-in-family  White  Female  United-States   31  45781             14         14084             0              50 ]
+2024-03-26 19:33:59.116 INFO [ START: Cleaning data ]
+2024-03-26 19:33:59.123 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-26 19:33:59.123 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-26 19:33:59.124 INFO [ Cleaned data returned ]
+2024-03-26 19:33:59.132 INFO [ MODEL: Run inference with input: [[3.1000e+01 4.5781e+04 1.4000e+01 1.4084e+04 0.0000e+00 5.0000e+01
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
+2024-03-26 19:33:59.180 INFO [ FINISH: Prediction completed ]
+2024-03-26 19:33:59.181 INFO [ RESULT: The predicted income is: >50K ]
