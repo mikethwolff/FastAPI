@@ -7,6 +7,7 @@ from fastapi import FastAPI, Response, status, Request
 import sys
 from fastapi.responses import HTMLResponse
 from typing import Any
+import os
 
 if __package__ is None or __package__ == '':
     from ml.model import LOG_FILE
@@ -39,6 +40,12 @@ logging.basicConfig(
         consoleHandler
     ]
 )
+
+if "DYNO" in os.environ and os.path.isdir(".dvc"):
+    os.system("dvc config core.no_scm true")
+    if os.system("dvc pull") != 0:
+        exit("dvc pull failed")
+    os.system("rm -r .dvc .apt/usr/lib/dvc")
 
 API_PROJECT_NAME = "CensusAPI"
 INDEX_BODY = (

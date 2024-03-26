@@ -67,3 +67,124 @@
   0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
 2024-03-26 19:33:59.180 INFO [ FINISH: Prediction completed ]
 2024-03-26 19:33:59.181 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 20:20:29.506 INFO [ FastAPI ]
+2024-03-26 20:20:29.507 INFO [ START: Loading model... ]
+2024-03-26 20:20:29.514 INFO [ SUCCESS: Model loaded ]
+2024-03-26 20:26:02.182 INFO [ CONTROL: Data dictonary: dict_values(['Private', 'Masters', 'Never-married', 'Prof-specialty', 'Not-in-family', 'White', 'Female', 'United-States', 31, 45781, 14, 14084, 0, 50]) ]
+2024-03-26 20:26:02.185 INFO [ START: Model inference started ]
+2024-03-26 20:26:02.237 INFO [ CONTROL: Input data:   workclass education marital_status      occupation   relationship   race     sex native_country  age  fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private   Masters  Never-married  Prof-specialty  Not-in-family  White  Female  United-States   31  45781             14         14084             0              50 ]
+2024-03-26 20:26:02.238 INFO [ START: Cleaning data ]
+2024-03-26 20:26:02.265 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-26 20:26:02.266 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-26 20:26:02.267 INFO [ Cleaned data returned ]
+2024-03-26 20:26:02.290 INFO [ MODEL: Run inference with input: [[3.1000e+01 4.5781e+04 1.4000e+01 1.4084e+04 0.0000e+00 5.0000e+01
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
+2024-03-26 20:26:02.355 INFO [ FINISH: Prediction completed ]
+2024-03-26 20:26:02.357 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 20:26:33.096 INFO [ CONTROL: Data dictonary: dict_values(['Private', 'Masters', 'Never-married', 'Prof-specialty', 'Not-in-family', 'White', 'Female', 'United-States', 31, 45781, 14, 14084, 0, 50]) ]
+2024-03-26 20:26:33.097 INFO [ START: Model inference started ]
+2024-03-26 20:26:33.134 INFO [ CONTROL: Input data:   workclass education marital_status      occupation   relationship   race     sex native_country  age  fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private   Masters  Never-married  Prof-specialty  Not-in-family  White  Female  United-States   31  45781             14         14084             0              50 ]
+2024-03-26 20:26:33.149 INFO [ START: Cleaning data ]
+2024-03-26 20:26:33.158 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-26 20:26:33.158 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-26 20:26:33.159 INFO [ Cleaned data returned ]
+2024-03-26 20:26:33.166 INFO [ MODEL: Run inference with input: [[3.1000e+01 4.5781e+04 1.4000e+01 1.4084e+04 0.0000e+00 5.0000e+01
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
+2024-03-26 20:26:33.218 INFO [ FINISH: Prediction completed ]
+2024-03-26 20:26:33.219 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 20:27:44.099 INFO [ CONTROL: Data dictonary: dict_values(['Private', '11th', 'Married-civ-spouse', 'Craft-repair', 'Husband', 'White', 'Male', 'United-States', 36, 186035, 7, 5178, 0, 40]) ]
+2024-03-26 20:27:44.100 INFO [ START: Model inference started ]
+2024-03-26 20:27:44.135 INFO [ CONTROL: Input data:   workclass education      marital_status    occupation relationship   race   sex native_country  age   fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private      11th  Married-civ-spouse  Craft-repair      Husband  White  Male  United-States   36  186035              7          5178             0              40 ]
+2024-03-26 20:27:44.144 INFO [ START: Cleaning data ]
+2024-03-26 20:27:44.159 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-26 20:27:44.159 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-26 20:27:44.160 INFO [ Cleaned data returned ]
+2024-03-26 20:27:44.165 INFO [ MODEL: Run inference with input: [[3.60000e+01 1.86035e+05 7.00000e+00 5.17800e+03 0.00000e+00 4.00000e+01
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00 1.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+  0.00000e+00 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00 0.00000e+00]] ]
+2024-03-26 20:27:44.229 INFO [ FINISH: Prediction completed ]
+2024-03-26 20:27:44.236 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 20:27:58.672 INFO [ CONTROL: Data dictonary: dict_values(['Private', 'Masters', 'Never-married', 'Prof-specialty', 'Not-in-family', 'White', 'Female', 'United-States', 31, 45781, 14, 14084, 0, 50]) ]
+2024-03-26 20:27:58.673 INFO [ START: Model inference started ]
+2024-03-26 20:27:58.699 INFO [ CONTROL: Input data:   workclass education marital_status      occupation   relationship   race     sex native_country  age  fnlgt  education_num  capital_gain  capital_loss  hours_per_week
+0   Private   Masters  Never-married  Prof-specialty  Not-in-family  White  Female  United-States   31  45781             14         14084             0              50 ]
+2024-03-26 20:27:58.710 INFO [ START: Cleaning data ]
+2024-03-26 20:27:58.729 INFO [ CONTROL: Categorical features: ['workclass', 'education', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+2024-03-26 20:27:58.730 INFO [ CONTROL: Numerical features: ['age', 'fnlgt', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+2024-03-26 20:27:58.731 INFO [ Cleaned data returned ]
+2024-03-26 20:27:58.740 INFO [ MODEL: Run inference with input: [[3.1000e+01 4.5781e+04 1.4000e+01 1.4084e+04 0.0000e+00 5.0000e+01
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  1.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 1.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00
+  0.0000e+00 0.0000e+00 0.0000e+00 1.0000e+00 0.0000e+00 0.0000e+00]] ]
+2024-03-26 20:27:58.825 INFO [ FINISH: Prediction completed ]
+2024-03-26 20:27:58.827 INFO [ RESULT: The predicted income is: >50K ]
+2024-03-26 20:42:33.558 INFO [ FastAPI ]
+2024-03-26 20:42:33.559 INFO [ START: Loading model... ]
+2024-03-26 20:42:33.564 INFO [ SUCCESS: Model loaded ]
+2024-03-26 20:42:41.852 INFO [ FastAPI ]
+2024-03-26 20:42:41.853 INFO [ START: Loading model... ]
+2024-03-26 20:42:41.857 INFO [ SUCCESS: Model loaded ]
