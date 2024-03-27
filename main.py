@@ -115,7 +115,6 @@ def index(request: Request) -> Any:
     return HTMLResponse(content=body)
 
 
-
 def predictApi(input_json, model_dir):
     input_df = pd.DataFrame(dict(input_json), index=[0])
     logging.info(f"[ CONTROL: Input data: {input_df} ]")

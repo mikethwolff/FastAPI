@@ -1,8 +1,15 @@
 import requests
 import json
+from fastapi.responses import HTMLResponse
 
-r = requests.get("https://census-salaries.herokuapp.com/")
-print(r.text)
+
+response = requests.get("https://census-salaries-d3e2956470bf.herokuapp.com/")
+# Check the response status code
+if response.status_code == 200:
+    print("GET request successful.")
+    print("Response:", response.text)
+else:
+    print("GET request failed with status code:", response.status_code)
 
 # Test data
 d = {     
@@ -22,7 +29,7 @@ d = {
     'native_country': 'United-States'
     }
 
-response = requests.post("https://census-salaries.herokuapp.com/predict", json=d)
+response = requests.post("https://census-salaries-d3e2956470bf.herokuapp.com/predict", json=d)
 if response.status_code == 200:
     print("POST request successful.")
     print(response.text)
