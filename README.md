@@ -1,7 +1,7 @@
-## ML Model Deployment with FastAPI and Heroku
+# ML Model Deployment with FastAPI and Heroku
 
 
-# Project starter kit
+## Project starter kit
 
 Census project: Predict whether income exceeds $50K/yr based on census data. Also known as Adult dataset.
 
@@ -9,7 +9,7 @@ Data has been downloaded from the [Udacity nd0821-c3 project starter kit](https:
 
 The UC Irvine Machine Learning Repository is where you can find information on the [original dataset](https://archive.ics.uci.edu/dataset/20/census+income)
 
-# Environment
+## Environment
 
 - Create your conda environment: 
   ```
@@ -19,7 +19,7 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   $ conda activate <your environment name>
   ```
 
-# Usage
+## Usage
 
 - Data cleaning:
 
@@ -65,10 +65,16 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   ```
   and by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
 
-# Model
+## Model
 
 Find model card for more detailed information: model_card.md
 
-# GithubActions
+## GithubActions
 
 If changes have been made, github actions is called.
+
+## Continuous Deployment to Heroku
+
+The app deployed on Heroku can be accessed at 
+
+[https://census-salaries-d3e2956470bf.herokuapp.com/](https://census-salaries-d3e2956470bf.herokuapp.com/)
