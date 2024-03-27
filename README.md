@@ -75,6 +75,6 @@ If changes have been made, github actions is called.
 
 ## Continuous Deployment to Heroku
 
-The app deployed on Heroku can be accessed at 
+The Heroku app can be tested by using the Jupyter notebook ["Census_Test_Heroku.ipynb"](Census_Test_Heroku.ipynb).
 
-[https://census-salaries-d3e2956470bf.herokuapp.com/](https://census-salaries-d3e2956470bf.herokuapp.com/)
+The app deployed on Heroku can be accessed at: ["https://census-salaries-d3e2956470bf.herokuapp.com/"](https://census-salaries-d3e2956470bf.herokuapp.com/)
