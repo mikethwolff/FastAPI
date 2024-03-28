@@ -57,11 +57,12 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 
   Documents can be found here: ["http://127.0.0.1:8000/docs"](http://127.0.0.1:8000/docss)
 
-  FastAPI tests can be performed by executing the command: 
+  FastAPI tests can be performed by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
+  
+  and by executing the command: 
   ```
   $ python -m api_tests
   ```
-  and by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
 
 ## Model card
 
