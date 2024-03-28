@@ -1,7 +1,7 @@
 # ML Model Deployment with FastAPI and Heroku
 
 
-## Project starter kit
+## Census project starter kit
 
 Census project: Predict whether income exceeds $50K/yr based on census data. Also known as Adult dataset.
 
@@ -19,21 +19,19 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   $ conda activate <your environment name>
   ```
 
-## Usage
-
-- Data cleaning:
+## Data cleaning:
 
   Data cleaning can be performed by using the Jupyter notebook ["Census_Clean_Data.ipynb"](Census_Clean_Data.ipynb).
   The notebook also provides a good overview of the data. 
   Data cleaning will also be provided via Python file: ["/ml/data_cleaning.py"](/ml/data_cleaning.py)
 
-- Sanity check: 
+## Sanity check: 
   ```
   $ python -m check.sanitycheck
   ```
   Answer path question with "api_tests.py" as test file for a check of functionality to meet course specifications
 
-- Train the model: 
+## Training the model: 
   ```
   $ python -m ml.train_model
   ```
@@ -49,7 +47,7 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 
   The output will be shown on screen and also be saved in ["/logs/census.log"](/logs/census.log)
 
-- Census API tests: 
+## Census API tests: 
 
   Start the uvicorn server with:
   ```
@@ -65,9 +63,9 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   ```
   and by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
 
-## Model
+## Model card
 
-Find model card for more detailed information: model_card.md
+Find detailed information in the ["model_card.md"](model_card.md)
 
 ## GithubActions
 
