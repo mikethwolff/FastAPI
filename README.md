@@ -27,9 +27,9 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 
 ## Sanity check: 
   ```
-  $ python -m check.sanitycheck
+  $ python -m tests.sanitycheck
   ```
-  Answer path question with "api_tests.py" as test file for a check of functionality to meet course specifications
+  Answer path question with "tests.api_tests.py" as test file for a check of functionality to meet course specifications
 
 ## Training the model: 
   ```
@@ -61,7 +61,7 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   
   and by executing the command: 
   ```
-  $ python -m api_tests
+  $ python -m tests.api_tests
   ```
 
 ## Model card
