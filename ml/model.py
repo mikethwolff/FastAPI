@@ -79,7 +79,7 @@ def calc_metrics(cat_features, model, y_test, y_pred, test_data, encoder, lb):
     -------
     None
     """
-    precision, recall, fbeta = _compute_model_metrics(y_test, y_pred)
+    precision, recall, fbeta = compute_model_metrics(y_test, y_pred)
     logging.info(f"[ METRICS: Precision: {precision}, Recall: {recall}, Fbeta: {fbeta} ]")
 
     metrics = []
@@ -91,7 +91,7 @@ def calc_metrics(cat_features, model, y_test, y_pred, test_data, encoder, lb):
                 slice_df, categorical_features=cat_features,
                 label='salary', training=False, encoder=encoder, lb=lb)
             y_slice_pred = model.predict(X_slice)
-            precision, recall, fbeta = _compute_model_metrics(y_slice,
+            precision, recall, fbeta = compute_model_metrics(y_slice,
                                                               y_slice_pred)
             metrics.append(f"[ {cat}: {catVar} ] --- Precision: {precision}, Recall: {recall}, Fbeta: {fbeta}")
     with open(SLICE_OUTPUT, 'w') as file:
@@ -99,7 +99,7 @@ def calc_metrics(cat_features, model, y_test, y_pred, test_data, encoder, lb):
     logging.info(f"[ FILE: Metrics written to {SLICE_OUTPUT} ]")
 
 
-def _compute_model_metrics(y, preds):
+def compute_model_metrics(y, preds):
     """
     Validates the trained machine learning model
     using precision, recall, and F1.
