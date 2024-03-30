@@ -30,7 +30,7 @@ The evaluation data comprised the same pre-processing steps and parameters as th
 
 ## Metrics
 
-The overall metrics of the model are <mark>Precision: 0.752, Recall: 0.567, Fbeta: 0.647</mark>
+The overall metrics of the model are `Precision: 0.752, Recall: 0.567, Fbeta: 0.647`
 
 ## Ethical Considerations
 
