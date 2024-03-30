@@ -59,9 +59,12 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 
   FastAPI tests can be performed by using the Jupyter notebook ["Census_Tests_API.ipynb"](Census_Tests_API.ipynb).
   
-  and by executing the command: 
+## Census API tests:
+
+Pytest will run all tests in the tests foler and can be executed via: 
   ```
-  $ python -m tests.api_tests
+  $ pytest -vv
+
   ```
 
 ## Model card
