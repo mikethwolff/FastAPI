@@ -12,7 +12,6 @@ import os
 if __package__ is None or __package__ == '':
     from ml.model import LOG_FILE
     from ml.clean_data import basic_cleaning
-    from dto.test import Test
     from ml import model
     from ml.train_model import CAT_FEATURES
     from ml.model import MODEL_FILENAME, ENCODER_FILENAME, LB_FILENAME
@@ -20,7 +19,6 @@ if __package__ is None or __package__ == '':
 else:
     from .ml.model import LOG_FILE
     from .ml.clean_data import basic_cleaning
-    from .dto.test import Test
     from .ml import model
     from .ml.train_model import CAT_FEATURES
     from .ml.model import MODEL_FILENAME, ENCODER_FILENAME, LB_FILENAME
@@ -166,17 +164,3 @@ def predict(data: Data):
         )
         logging.info("[ RESULT: The predicted income is: " + str(list(y_pred)[0]) + " ]")
         return response
-
-
-@app.post("/test_salary")
-async def test_salary(data: Data):
-    logging.info(f"API call to /predict_salary with {data}")
-    # convert data to pandas dataframe, credits to https://stackoverflow.com/a/17840195
-    data_df = pd.DataFrame(data.dict(by_alias=True), index=[0])
-    input_data, _, _, _ = process_data(data_df, CAT_FEATURES, label=None, training=False, encoder=encoder, lb=lb)
-    pred = model.inference(lr_model, input_data)
-    pred_class = lb.inverse_transform(pred)[0]
-    logging.info(f"Prediction: {pred} class: {pred_class}")
-    resp = {f"RESULT: The predicted income is: {pred_class}"}
-    logging.info(f"Response with {resp}")
-    return resp
