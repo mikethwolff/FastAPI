@@ -61,7 +61,7 @@ The UC Irvine Machine Learning Repository is where you can find information on t
   
 ## Pytest:
 
-Pytest will run all tests in the tests foler and can be executed via: 
+Pytest will run all tests in the tests folder and can be executed via: 
   ```
   $ pytest -vv
 
