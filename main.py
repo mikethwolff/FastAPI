@@ -58,6 +58,9 @@ INDEX_BODY = (
 )
 
 app = FastAPI(title=API_PROJECT_NAME)
+lr_model = load(MODEL_FILENAME)
+encoder = load(ENCODER_FILENAME)
+lb = load(LB_FILENAME)
 
 class Data(BaseModel):
     workclass: str = None
@@ -122,8 +125,10 @@ def predictApi(input_json, model_dir):
     #clean data
     cleaned_df, cat_cols, num_cols = basic_cleaning(input_df, "data/census_cleaned.csv", "salary", test=True)
 
-    #load model, encoder, and lb and predict on single json instance
-    #model, encoder, lb = load_module(model_dir)
+    # model, encoder and lb are loded already
+    #model = load("artifacts/model.joblib")
+    #encoder = load("artifacts/encoder.joblib")
+    #lb = load("artifacts/lb.joblib")
 
     #process data
     X, _, _, _ = process_data(cleaned_df, cat_cols, training=False, encoder=encoder, lb=lb)
@@ -151,7 +156,7 @@ def predict(data: Data):
         logging.info("[ START: Model inference started ]")
 
         # Prediction
-        y_pred = predictApi(data, '/model')
+        y_pred = predictApi(data, '/artifacts')
         logging.info("[ FINISH: Prediction completed ]")
 
         # Result
@@ -161,3 +166,17 @@ def predict(data: Data):
         )
         logging.info("[ RESULT: The predicted income is: " + str(list(y_pred)[0]) + " ]")
         return response
+
+
+@app.post("/test_salary")
+async def test_salary(data: Data):
+    logging.info(f"API call to /predict_salary with {data}")
+    # convert data to pandas dataframe, credits to https://stackoverflow.com/a/17840195
+    data_df = pd.DataFrame(data.dict(by_alias=True), index=[0])
+    input_data, _, _, _ = process_data(data_df, CAT_FEATURES, label=None, training=False, encoder=encoder, lb=lb)
+    pred = model.inference(lr_model, input_data)
+    pred_class = lb.inverse_transform(pred)[0]
+    logging.info(f"Prediction: {pred} class: {pred_class}")
+    resp = {f"RESULT: The predicted income is: {pred_class}"}
+    logging.info(f"Response with {resp}")
+    return resp

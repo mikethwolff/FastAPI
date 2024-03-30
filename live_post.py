@@ -2,7 +2,6 @@ import requests
 import json
 from fastapi.responses import HTMLResponse
 
-
 response = requests.get("https://census-salaries-d3e2956470bf.herokuapp.com/")
 # Check the response status code
 if response.status_code == 200:
