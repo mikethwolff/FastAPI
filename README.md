@@ -64,7 +64,6 @@ The UC Irvine Machine Learning Repository is where you can find information on t
 Pytest will run all tests in the tests folder and can be executed via: 
   ```
   $ pytest -vv
-
   ```
 
 ## Model card
