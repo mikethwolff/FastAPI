@@ -38,4 +38,4 @@ The dataset provided appears to be fair and not biased. Neither is the model bia
 
 ## Caveats and Recommendations
 
-The dataset contains information about race and gender, which can, in cases, potentially discriminate against individuals in such brackets. Further evaluation of the bias/ethical information of the dataset is necessary.
+The dataset contains information about race and gender, further evaluation of the bias/ethical information of the dataset is therefore necessary.
