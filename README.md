@@ -1,4 +1,4 @@
-# ML Model Deployment with FastAPI and Heroku
+# Machine Learning Model Deployment with FastAPI and Heroku
 
 
 ## Census project starter kit
